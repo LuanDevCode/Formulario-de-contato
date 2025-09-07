@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    background-color: rgb(34, 34, 28);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    background-color: rgb(29, 20, 36);
+    width: 600px;
+    height: 90%;
+    padding-top: 2em;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset{
+    border: none;
+}
+
+legend{
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(134, 142, 216);
+    font-weight: bold;
+}
+
+input{
+    border-bottom: 2px solid grey;
+    background-color: rgb(56, 56, 56);
+    height: 3em;
+    margin-bottom: 3em;
+    outline: none;
+    color: white;
+    font-size: 1em;
+}
+
+textarea{
+    background-color: rgb(56, 56, 56);
+    resize: none;
+    margin-bottom: 3em;
+    height: 10em;
+    outline: none;
+    color: white;
+}
+
+.botao{
+    display: flex;
+    justify-content: end;
+
+}
+
+#assunto:focus{
+     border-bottom: 2px solid green;
+}
+
+/* Quando o campo está preenchido corretamente */
+input:valid:focus, textarea:valid:focus{
+    border-bottom: 2px solid green;
+}
+
+/* Quando o campo está vazio ou preenchido incorretamente */
+ input:invalid:focus{
+    border-bottom: 2px solid red;}
+
+
+button{
+    background-color: rgb(56, 56, 56);
+    padding: 12px;
+    color: white;
+}
+
+textarea:invalid:focus{border-bottom: 2px solid red;}
+
+textarea:valid:focus{border-bottom: 2px solid green;}
